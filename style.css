@@ -269,4 +269,21 @@ button {
   body {
     background: red;
   }
+  #conteneurheader {
+  height: 75px;
+  width: 100%;
+  background: #B0F2B6;
+  }
+  #conteneursection {
+    display: flex;
+    flex-direction: column;
+  }
+  #fieldsetconteneursection {
+    width: 80%;
+    margin: auto;
+  }
+  #conteneurcategories {
+    width: 80%;
+    margin: auto;
+  }
 }
