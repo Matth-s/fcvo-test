@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="CSS/style.css">
@@ -17,7 +17,7 @@
         <div id="navbarheader">
                 <nav>
                         <ul class="navbarelement">
-                                <img class="logofcvonavheader" src="Image/logofcvo.png" alt="logofcvo">
+                                <li><img class="logofcvonavheader" src="Image/logofcvo.png" alt="logofcvo"></li>
                                 <li class="boutique"><a href="#">Boutique</a></li>
                                 <li class="menuderoulant">Vie du club
                                     <ul class="sous-menu">
@@ -45,16 +45,7 @@
                                         <li><a href="https://www.google.fr/maps/place/Football+Club+Vall%C3%A9e+de+l'Ousse+-+stade+Espoey/@43.2470859,-0.1669201,16.69z/data=!4m9!1m2!2m1!1sstade!3m5!1s0xd56317147d3bde7:0xe296002b5bf4210f!8m2!3d43.2472825!4d-0.1645817!15sCgVzdGFkZZIBDWZvb3RiYWxsX2NsdWI">Espoey</a></li>
                                     </ul>
                                 </li>
-                                <li class="menuderoulant">Contact
-                                    <ul class="sous-menu">
-                                        <li>President
-                                            <ul>
-                                                <li>Tél : 07 86 42 85 79</li>
-                                                <li>Mail : senosiain.matthieu@yahoo.fr</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <li class="menuderoulant">Contact</li>
                         </ul>
                 </nav>
         </div>
@@ -182,14 +173,14 @@
                 <input type="text" id="prenom" name="prenom">
 
                 <label for="dtn">Date de naissance</label>
-                <input type="date" id="dtn" name="date_de_naissance">
+                <input type="date" id="dtn" name="date_de_naissance"><br>
 
                 <label for="role">Role</label>
-                <input type="combobox" id="role" name="role">
+                <select id="role" name="role"></select><br>
 
                 <label for="categorie">Catégorie</label>
                 <select name="categorie" id="categorie">
-                    <option value="empty"></option>
+                    <option value="empty">Choisir une catégorie</option>
                     <option value="U7">U7</option>
                     <option value="U9">U9</option>
                     <option value="U11">U11</option>
@@ -202,8 +193,8 @@
                     <option value="Loisir">Loisir</option>
                 </select><br>
                 <label for="poste">Poste</label>
-                <select name="poste" id="post">
-                    <option value="empty"></option>
+                <select name="poste" id="poste">
+                    <option value="empty">Choisir un poste</option>
                     <option value="Gardien">Gardien</option>
                     <option value="Defenseur">Defenseur</option>
                     <option value="Milieu">Milieu</option>
@@ -211,6 +202,7 @@
                 </select><br>
                 <label for="dernierclub">Dernier club</label>
                 <input type="text" name="dernierclub" id="dernierclub">
+
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email">
 
