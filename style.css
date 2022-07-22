@@ -264,3 +264,9 @@ button {
   width: 30%;
   margin-top: 10px;
 }
+
+@media (max-width: 640px) {
+  body {
+    background: red;
+  }
+}
