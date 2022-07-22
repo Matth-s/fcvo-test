@@ -232,9 +232,6 @@ legend {
   color : green;
   font-size: 25px;
 }
-#navbarheader nav ul .menuderoulant:nth-last-child(4) .pre-inscription:hover #conteneurpre-inscription {
-  display: block;
-}
 .formulaire {
   padding: 0;
   margin: 0;
@@ -264,7 +261,9 @@ button {
   width: 30%;
   margin-top: 10px;
 }
-
+.navbarelementresponsive {
+  display: none;
+}
 @media (max-width: 640px) {
   body {
     margin: 0;
@@ -299,14 +298,38 @@ button {
     display: flex;
     margin: auto;
   }
-  #conteneurcategories .sectionnav {
-
-  }
   #responsivenav {
     border-right : 5px solid white;
   }
   #conteneurheaderpresentation {
     width: auto;
     margin: auto;
+  }
+  #navbarheader {
+    width: auto;
+    padding: -20px;
+    margin: 0;
+    background: orange;
+  }
+  #navbarheader li {
+    text-align: left;
+  }
+  #navbarheader li, a {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  nav {
+    width: auto;
+    height: 100%;
+    padding: 0;
+    margin-left: -70px;
+    justify-content: space-between ;
+    border: 1px solid white;
+    background: red;
+  }
+
+  #navbarheader nav .navbarelement .menuderoulant:nth-child(5):hover .sous-menu {
+    width: auto;
+    padding: 0;
   }
 }
