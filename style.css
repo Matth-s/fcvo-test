@@ -324,8 +324,6 @@ button {
     padding: 0;
     margin-left: -70px;
     justify-content: space-between ;
-    border: 1px solid white;
-    background: red;
   }
 
   #navbarheader nav .navbarelement .menuderoulant:nth-child(5):hover .sous-menu {
