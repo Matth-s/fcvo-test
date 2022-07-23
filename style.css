@@ -35,7 +35,6 @@ a {
 }
 .boutique a{
   padding-top: 0px !important;
-
   padding-top: 25px;
 }
 #navbarheader {
@@ -62,8 +61,6 @@ a {
   width: 76px ;
   position: relative;
   margin-top: -25px;
-}
-.menuderoulant {
 }
 .sous-menu {
     width: 180px;
@@ -264,97 +261,133 @@ button {
   width: 30%;
   margin-top: 10px;
 }
-.navbarelementresponsive {
-  display: none;
+
+@media (min-width:320px) and (max-width: 518px) {
+  body {
+    background : orange;
+  }
 }
 
-
-
-@media (max-width: 480px) {
-  body, header {
-    margin: 0;
-    padding: 0;
-  }
+@media (min-width: 518px) and (max-width: 623px) {
   body {
-    background: red;
-  }
-  header {
-    width: auto;
-    padding: 0;
-    margin: 0;
+    background : green;
   }
   #conteneurheader {
-  height: 190px;
-  width: 100%;
-  background: #B0F2B6;
+      width: auto !important;
   }
-  .logofcvo {
-    width: 190px;
-    height: 190px;
-    margin-left: 10px;
+  #conteneurheader #conteneurheaderpresentation {
+      width: 500px !important;
+      margin: auto;
   }
-  nav {
-    height: 80px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  #navbarheader {
+    width: auto !important;
   }
-  .navbarelement {
-    background: grey;
-    height: 55px;
-    width: 100% !important;
-    padding: 0;
-    margin: 0;
-  }
-  .navbarelement li, a {
-    font-size: 15px ;  
+  #navbarheader nav .navbarelement {
+     width: auto !important;
+     padding-left: 0 !important;
+     margin: 0 !important;
   }
   #conteneursection {
+    width: auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0;
-    margin: 0;
   }
-  #fieldsetconteneursection, #conteneurcategories {
-    width: auto;
+  #fieldsetconteneursection {
+     width: auto !important;
   }
-  #conteneurheaderpresentation {
-    width: auto;
-  }
-  #navheader {
-    width: auto;
-    height: 100%;
-    padding: 0;
-    align-content: flex-start;
-    justify-content: space-between ;
-  }
-   #conteneurcategories {
+  #conteneurcategories {
     display: flex;
-    border-top: 0px;
-    border-radius: 20px;
+    flex-direction: row;
+    width: auto !important;
     justify-content: space-between;
+  }
+  #conteneurcategories #responsivenav, #responsive {
+    width: 45% !important ;
   }
   .sectionnav {
-    border: 0px;
+    border-bottom: 0px solid #B0F2B6;
+  } 
+  #navbarheader nav .navbarelement .menuderoulant:nth-child(5) {
+    position: relative;
   }
-  #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
-    width: auto;
-    padding: 0;
+  #navbarheader nav .navbarelement .menuderoulant:nth-child(5):hover .sous-menu {
+    position:absolute;
+    right:0px;
+    top:22px;
+    display: block;
   }
-  #responsivenav, #responsive {
-    width: 45%;
-    border: 1px solid #B0F2B6;
-    border-bottom: none;
-    padding-right: 10px;
-    border-right: 5px solid white;
-  }
-  #sectionnav {
-    background: grey;
-  }
-  button {
-    text-align: center;
-    padding: 0;
-  }
+}
+@media (min-width: 624px) and (max-width: 889px){
+    body {
+      background: red;
+    }
+    #conteneurheader {
+           width: auto !important;
+    }
+    #conteneurheader #conteneurheaderpresentation {
+          width: 500px !important;
+    }
+    #navbarheader {
+      width: auto !important;
+    }
+    #navbarheader nav .navbarelement {
+      width: auto !important;
+      padding-left: 0 !important;
+      margin: 0 !important;
+    }
+    #conteneursection {
+      width: auto !important;
+    }
+    .formulaire {
+      display: flex;
+      flex-direction: column;
+    }
+    .formulaire select {
+        width: 160px;
+    }
+    button {
+          margin:  auto;
+          width:50%;
+          margin-top: 10px;
+    }
+}
+@media (min-width: 890px) and (max-width: 1024px){
+    body {
+     background: blue;
+    }
+    button {
+          margin:  auto;
+          width:50%;
+          margin-top: 10px;
+    }
+    #conteneurheader {
+           width: auto !important;
+    }
+    #conteneurheader #conteneurheaderpresentation {
+          width: 500px !important;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1500px){
+    body {
+        background-color: orange;
+    }
+    #conteneurheader {
+        width: auto !important;
+    }
+    #conteneurheader #conteneurheaderpresentation {
+        width: 500px !important;
+        margin: auto;
+    }
+    .formulaire {
+        display: flex;
+        flex-direction: column;
+    }
+    .formulaire select {
+        width: 160px;
+    }
+    button {
+        width: 120px;
+        margin-left: 0%;
+    }
 }
