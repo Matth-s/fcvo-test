@@ -267,6 +267,10 @@ button {
     margin: 0 !important;
     padding: 0 !important;
   }
+  .titreheader {
+    font-size: 15px !important;
+
+  }
   #conteneurheader {
     width: auto !important;
   }
@@ -497,6 +501,18 @@ button {
           margin:  auto;
           width:50%;
           margin-top: 10px;
+    }
+    .sous-menu { 
+    width: auto !important;
+    position: absolute;
+    }
+    #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
+      position:absolute;
+      left:120px;
+      display: block;
+    }
+    .menuderoulant {
+      width: auto !important;
     }
 }
 @media (min-width: 890px) and (max-width: 1024px){
