@@ -294,7 +294,6 @@ button {
   }
   nav {
     height: 80px;
-    background: red;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -332,9 +331,14 @@ button {
     justify-content: space-between ;
   }
    #conteneurcategories {
-    width: 100%;
+    width: auto;
     display: flex;
+    border-top: 0px;
+    border-radius: 20px;
     justify-content: space-between;
+  }
+  .sectionnav {
+    border: 0px;
   }
   #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
     width: auto;
@@ -345,7 +349,7 @@ button {
     border: 1px solid #B0F2B6;
     border-bottom: none;
     padding-right: 10px;
-    border-right: 5px solid white ;
+    border-right: 5px solid white;
   }
   #sectionnav {
     background: grey;
