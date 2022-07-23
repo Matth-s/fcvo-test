@@ -25,7 +25,6 @@
   height: 75px;
   width: 75px;
   background: green;
-  types border-style : none;
 }
 li  {
   list-style-type: none;
@@ -112,7 +111,6 @@ a {
 }
 #fieldsetconteneursection {
   border: 5px solid green;
-  //background-image: linear-gradient(to top , green, #689D71 );
   background: #B0F2B6;
   border-radius: 10px;
   height: 10%;
@@ -278,7 +276,7 @@ button {
     padding: 0;
   }
   header {
-    width: 100%;
+    width: auto;
     padding: 0;
     margin: 0;
   }
