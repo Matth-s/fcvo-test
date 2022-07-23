@@ -315,6 +315,7 @@ button {
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin: auto !important;
   }
   header #navbarheader nav {
     background: grey;
@@ -335,6 +336,9 @@ button {
   }
   .menuderoulant {
     width: auto !important;
+  }
+  #conteneurcategories {
+    margin: auto !important;
   }
 }
 
