@@ -261,7 +261,56 @@ button {
   width: 30%;
   margin-top: 10px;
 }
+@media (min-width :320px) and (max-width: 433px) {
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #conteneurheader #conteneurheaderpresentation {
+    width: 410px !important;
+    margin: auto !important;
+    font-size: 5px;
+  }
+  #navbarheader {
+   width: auto !important;
+  }
+  #conteneursection {
+    width: auto !important;
+    display: flex;
+    flex-direction: column;
+  }
+  #fieldsetconteneursection {
+    width: auto !important;
+  }
+  #conteneurcategories {
+    display: flex;
+    flex-direction: row;
+    width: auto !important;
+    justify-content: space-between;
+  }
+  #conteneurcategories #responsivenav, #responsive {
+    width: 45% !important ;
+  }
+  button {
 
+    margin:  auto;
+    width:50%;
+    margin-top: 10px;
+  }
+  header #navbarheader nav .navbarelement {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  header #navbarheader nav {
+    background: grey;
+    padding: 0 !important;
+    height: 172px !important;
+  }
+  .saut {
+    height: 150px;
+  }
+}
 
 @media (min-width:434px) and (max-width: 517px) {
   body {
@@ -331,7 +380,6 @@ button {
   #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
     position:absolute;
     left:120px;
-    top: auto -10px;
     display: block;
   }
   .menuderoulant {
