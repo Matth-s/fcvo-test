@@ -270,10 +270,13 @@ button {
 
 
 
-@media (max-width: 480px) {
+@media all and (max-device-width: 480px) {
   body, header {
     margin: 0;
     padding: 0;
+  }
+  body {
+    background: red;
   }
   header {
     width: auto;
