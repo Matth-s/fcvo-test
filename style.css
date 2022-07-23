@@ -314,12 +314,11 @@ button {
     padding: 0;
     margin: 0;
   }
-  #fieldsetconteneursection {
+  #fieldsetconteneursection, #conteneurcategories {
     width: auto;
   }
   #conteneurheaderpresentation {
     width: auto;
-    margin: auto;
   }
   #navheader {
     width: auto;
@@ -329,7 +328,6 @@ button {
     justify-content: space-between ;
   }
    #conteneurcategories {
-    width: auto;
     display: flex;
     border-top: 0px;
     border-radius: 20px;
