@@ -275,7 +275,7 @@ button {
   background: #B0F2B6;
   }
   header {
-    width: auto;
+    width: 100%;
   }
   .logofcvo {
     width: 190px;
@@ -301,7 +301,6 @@ button {
     width: auto;
     padding: -20px;
     margin: 0;
-    background: orange;
   }
   #navbarheader li {
     text-align: left;
@@ -323,7 +322,7 @@ button {
     display: flex;
     justify-content: space-between;
   }
-  #navbarheader nav .navbarelement .menuderoulant:nth-child(5):hover .sous-menu {
+  #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
     width: auto;
     padding: 0;
   }
@@ -336,6 +335,10 @@ button {
   }
   #sectionnav {
     background: grey;
+  }
+  button {
+    text-align: center;
+    padding: 0;
   }
   
 }
