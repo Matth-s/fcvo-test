@@ -262,11 +262,7 @@ button {
   margin-top: 10px;
 }
 
-@media (min-width :320px) and (max-width: 433px) {
-  body {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+@media (min-width: 320px) and (max-width: 433px) {
   body {
     margin: 0 !important;
     padding: 0 !important;
@@ -275,11 +271,11 @@ button {
     width: auto !important;
   }
   #conteneurheader #conteneurheaderpresentation {
-    width: 410px !important;
-    margin: auto !important;
+    width: 418px !important;
+    background: #B0F2B6;
   }
   #navbarheader {
-   width: auto !important;
+   width: 418px !important;
   }
   #navbarheader nav .navbarelement {
    width: auto !important;
@@ -302,6 +298,7 @@ button {
     flex-direction: row;
     width: auto !important;
     justify-content: space-between;
+   width: 418px !important;
   }
   #conteneurcategories #responsivenav, #responsive {
     width: 45% !important ;
