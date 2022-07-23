@@ -262,16 +262,83 @@ button {
   margin-top: 10px;
 }
 
-@media (min-width:320px) and (max-width: 518px) {
+
+@media (min-width:434px) and (max-width: 517px) {
   body {
-    background : orange;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #conteneurheader {
+    width: auto !important;
+  }
+  #conteneurheader #conteneurheaderpresentation {
+    width: 410px !important;
+    margin: auto !important;
+  }
+  #navbarheader {
+   width: auto !important;
+  }
+  #navbarheader nav .navbarelement {
+   width: auto !important;
+   padding-left: 0 !important;
+   margin: 0 !important;
+  }
+  #conteneurheader .logofcvo {
+    display: none;
+  }
+  #conteneursection {
+    width: auto !important;
+    display: flex;
+    flex-direction: column;
+  }
+  #fieldsetconteneursection {
+    width: auto !important;
+  }
+  #conteneurcategories {
+    display: flex;
+    flex-direction: row;
+    width: auto !important;
+    justify-content: space-between;
+  }
+  #conteneurcategories #responsivenav, #responsive {
+    width: 45% !important ;
+  }
+  .sectionnav {
+    border-bottom: 0px solid #B0F2B6;
+  } 
+  button {
+    margin:  auto;
+    width:50%;
+    margin-top: 10px;
+  }
+  header #navbarheader nav .navbarelement {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  header #navbarheader nav {
+    background: grey;
+    padding: 0 !important;
+    height: 172px !important;
+  }
+  .saut {
+    height: 150px;
+  }
+  .sous-menu { 
+    width: auto !important;
+    position: absolute;
+  }
+  #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
+    position:absolute;
+    left:120px;
+    top: auto -10px;
+    display: block;
+  }
+  .menuderoulant {
+    width: auto !important;
   }
 }
-
 @media (min-width: 518px) and (max-width: 623px) {
-  body {
-    background : green;
-  }
   #conteneurheader {
       width: auto !important;
   }
@@ -318,15 +385,15 @@ button {
     display: block;
   }
 }
+
+
+
 @media (min-width: 624px) and (max-width: 889px){
-    body {
-      background: red;
-    }
     #conteneurheader {
            width: auto !important;
     }
     #conteneurheader #conteneurheaderpresentation {
-          width: 500px !important;
+          width: 550px !important;
     }
     #navbarheader {
       width: auto !important;
@@ -353,9 +420,6 @@ button {
     }
 }
 @media (min-width: 890px) and (max-width: 1024px){
-    body {
-     background: blue;
-    }
     button {
           margin:  auto;
           width:50%;
@@ -369,9 +433,6 @@ button {
     }
 }
 @media (min-width: 1025px) and (max-width: 1500px){
-    body {
-        background-color: orange;
-    }
     #conteneurheader {
         width: auto !important;
     }
