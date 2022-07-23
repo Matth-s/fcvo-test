@@ -293,14 +293,6 @@ button {
   #fieldsetconteneursection {
     width: auto;
   }
-  #conteneurcategories {
-    width: 100%;
-    display: flex;
-    margin: auto;
-  }
-  #responsivenav {
-    border-right : 5px solid white;
-  }
   #conteneurheaderpresentation {
     width: auto;
     margin: auto;
@@ -318,16 +310,32 @@ button {
     font-size: 15px;
     margin-top: 5px;
   }
-  nav {
+  #navheader {
     width: auto;
     height: 100%;
     padding: 0;
     margin-left: -70px;
     justify-content: space-between ;
+    border: 1px solid white;
   }
-
+   #conteneurcategories {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
   #navbarheader nav .navbarelement .menuderoulant:nth-child(5):hover .sous-menu {
     width: auto;
     padding: 0;
   }
+  #responsivenav, #responsive {
+    width: 45%;
+    border: 1px solid #B0F2B6;
+    border-bottom: none;
+    padding-right: 10px;
+    border-right: 5px solid white ;
+  }
+  #sectionnav {
+    background: grey;
+  }
+  
 }
