@@ -261,18 +261,33 @@ button {
   width: 30%;
   margin-top: 10px;
 }
+
 @media (min-width :320px) and (max-width: 433px) {
   body {
     margin: 0 !important;
     padding: 0 !important;
   }
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #conteneurheader {
+    width: auto !important;
+  }
   #conteneurheader #conteneurheaderpresentation {
     width: 410px !important;
     margin: auto !important;
-    font-size: 5px;
   }
   #navbarheader {
    width: auto !important;
+  }
+  #navbarheader nav .navbarelement {
+   width: auto !important;
+   padding-left: 0 !important;
+   margin: 0 !important;
+  }
+  #conteneurheader .logofcvo {
+    display: none;
   }
   #conteneursection {
     width: auto !important;
@@ -291,8 +306,10 @@ button {
   #conteneurcategories #responsivenav, #responsive {
     width: 45% !important ;
   }
+  .sectionnav {
+    border-bottom: 0px solid #B0F2B6;
+  } 
   button {
-
     margin:  auto;
     width:50%;
     margin-top: 10px;
@@ -310,7 +327,21 @@ button {
   .saut {
     height: 150px;
   }
+  .sous-menu { 
+    width: auto !important;
+    position: absolute;
+  }
+  #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
+    position:absolute;
+    left:120px;
+    display: block;
+  }
+  .menuderoulant {
+    width: auto !important;
+  }
 }
+
+
 
 @media (min-width:434px) and (max-width: 517px) {
   body {
