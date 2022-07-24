@@ -277,7 +277,7 @@ button {
     width: auto !important;
   }
   .titreheader {
-    font-size: 24px !important;
+    font-size: 20px !important;
     text-align: center;
     width: auto !important;
   }
@@ -317,6 +317,8 @@ button {
   .formulaire {
     display: flex;
     flex-direction: column;
+    width: 150px;
+    margin: auto;
   }
   .sectionnav {
     border-bottom: 0px solid #B0F2B6;
