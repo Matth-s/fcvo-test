@@ -264,7 +264,7 @@ button {
   margin-top: 10px;
 }
 
-@media (min-width: 320px) and (max-width: 433px) {
+@media (min-width: 340px) and (max-width: 433px) {
   body {
     margin: 0 !important;
     padding: 0 !important;
@@ -353,9 +353,7 @@ button {
   }
 }
 
-
-
-@media (min-width:434px) and (max-width: 517px) {
+@media (min-width:435px) and (max-width: 517px) {
   body {
     margin: 0 !important;
     padding: 0 !important;
