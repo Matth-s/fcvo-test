@@ -451,6 +451,13 @@ button {
   #fieldsetconteneursection {
      width: auto !important;
   }
+  .formulaire {
+     display: flex;
+     flex-direction: column;
+  }
+  select {
+    width: 158px;
+  }
   #conteneurcategories {
     display: flex;
     flex-direction: row;
@@ -510,14 +517,15 @@ button {
     width: auto !important;
     position: absolute;
     }
-    #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
-      position:absolute;
-      left:120px;
-      display: block;
-    }
-    .menuderoulant {
-      width: auto !important;
-    }
+    #navbarheader nav .navbarelement .menuderoulant:nth-child(5) {
+    position: relative;
+  }
+  #navbarheader nav .navbarelement .menuderoulant:nth-child(5):hover .sous-menu {
+    position:absolute;
+    right:0px;
+    top:22px;
+    display: block;
+  }
 }
 @media (min-width: 890px) and (max-width: 1024px){
     button {
