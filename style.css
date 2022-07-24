@@ -370,6 +370,8 @@ button {
   }
   .heurerencontre {
     margin: auto !important;
+    width: 80%;
+    text-align: justify-all;
   }
 }
 @media (min-width:434px) and (max-width: 517px) {
