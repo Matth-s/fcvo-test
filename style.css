@@ -269,20 +269,23 @@ button {
     margin: 0 !important;
     padding: 0 !important;
   }
+  #conteneurpre-inscription {
+    width: auto !important;
+  }
   .titreheader {
     font-size: 28px !important;
     text-align: center;
     width: auto !important;
   }
   #conteneurheader {
-    width: 450px !important;
+    width: auto !important;
   }
   #conteneurheader #conteneurheaderpresentation {
-    width: 450px !important;
+    width: auto !important;
     height: 60px !important;
   }
   #navbarheader {
-   width: 450px !important;
+   width: auto !important;
    margin-top: -15px !important;
   }
   #navbarheader nav .navbarelement {
@@ -306,7 +309,7 @@ button {
     flex-direction: row;
     width: auto !important;
     justify-content: space-between;
-    width: 450px !important;
+    width: auto !important;
   }
   #conteneurcategories #responsivenav, #responsive {
     width: 45% !important ;
