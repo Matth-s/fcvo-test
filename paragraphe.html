@@ -1,574 +1,225 @@
-.saut {
-  height: 50px;
-}
-#conteneurheader {
-  height: 75px;
-  width: 100%;
-  background: #B0F2B6;
-}
- #conteneurheaderpresentation {
-  width: 35%;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-}
-.titreheader {
-  color: white;
-  font-size: 30px;
-  background-image: linear-gradient(to right, green, #689D71);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football club Vallée de l'Ousse</title>
+</head>
+<body>
+    <header>
+        <div id="conteneurheader">
+            <div id="conteneurheaderpresentation">
+                <p><span class="titreheader">Football Club Vallée de l'Ousse </span></p>
+                <img class="logofcvo" src="logofcvo.png" alt="logofcvo">
+            </div>
+        </div>
+        <div id="navbarheader">
+                <nav>
+                        <ul class="navbarelement">
+                                <li class="boutique"><a href="boutique.html">Boutique</a></li>
+                                <li class="menuderoulant">Vie du club
+                                    <ul class="sous-menu">
+                                        <li><a href="#">Photo</a></li>
+                                        <li><a href="foyer.html">Foyer</a></li>
+                                        <li><a href="#">Equipe</a></li>
+                                        <li><a href="#">Actualités</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menuderoulant">Entrainement
+                                    <ul class="sous-menu">
+                                        <li><a href="https://www.teampulseapp.fr/fr">Se connecter</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menuderoulant">Réseaux
+                                    <ul class="sous-menu">
+                                        <li><a href="https://www.instagram.com/fcvoofficiel/?hl=fr">Instagram</a></li>
+                                        <li><a href="https://fr-fr.facebook.com/fcvofoot/">Facebook</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menuderoulant">Terrain
+                                    <ul class="sous-menu">
+                                        <li><a href="https://www.google.fr/maps/place/Terrain+de+foot+%C3%A0+Soumoulou/@43.2634773,-0.2065419,14.26z/data=!4m9!1m2!2m1!1sstade!3m5!1s0xd5631d224e031e3:0xcb850275f726e1a9!8m2!3d43.2656654!4d-0.1914182!15sCgVzdGFkZZIBDHNvY2Nlcl9maWVsZA">Soumoulou</a></li>
+                                        <li><a href="https://www.google.fr/maps/place/Football+Club+Vall%C3%A9e+de+l'Ousse+-+stade+Artigueloutan/@43.2744495,-0.251117,16.77z/data=!4m9!1m2!2m1!1sstade!3m5!1s0xd5637292b26c745:0xb45185876444de77!8m2!3d43.2755248!4d-0.2482039!15sCgVzdGFkZZIBDWZvb3RiYWxsX2NsdWI">Artigueloutan</a></li>
+                                        <li><a href="https://www.google.fr/maps/place/Football+Club+Vall%C3%A9e+de+l'Ousse+-+stade+Espoey/@43.2470859,-0.1669201,16.69z/data=!4m9!1m2!2m1!1sstade!3m5!1s0xd56317147d3bde7:0xe296002b5bf4210f!8m2!3d43.2472825!4d-0.1645817!15sCgVzdGFkZZIBDWZvb3RiYWxsX2NsdWI">Espoey</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menuderoulant">Contact</li>
+                        </ul>
+                </nav>
+        </div>
+    </header>
+    <div class="saut"></div>
+    <section id="conteneursection">
+        <fieldset id="fieldsetconteneursection">
+            <legend>Rencontre du weekend</legend>
+            <section class="rencontre">
+                <fieldset class="fieldsetrencontre">
+                    <legend>Senior homme A</legend>
+                    <img class="equipelogo" src="paris.jpg" alt="logofcvo">
+                    <p class="heurerencontre">Match à 15h00 soumoulou</p>
+                    <img class="equipelogo" src="logofcvo.png" alt="logofcvo">
+                </fieldset>
+            </section>
+            <section class="rencontre">
+                <fieldset class="fieldsetrencontre">
+                    <legend>Senior homme A</legend>
+                    <img class="equipelogo" src="paris.jpg" alt="logofcvo">
+                    <p class="heurerencontre">Match à 15h00 Artigueloutan</p>
+                    <img class="equipelogo" src="logofcvo.png" alt="logofcvo">
+                </fieldset>
+            </section>
+            <section class="rencontre">
+                <fieldset class="fieldsetrencontre">
+                    <legend>Senior Feminine A</legend>
+                    <img class="equipelogo" src="paris.jpg" alt="logofcvo">
+                    <p class="heurerencontre">Match à 15h00 Artigueloutan</p>
+                    <img class="equipelogo" src="logofcvo.png" alt="logofcvo">
+                </fieldset>
+            </section><section class="rencontre">
+                <fieldset class="fieldsetrencontre">
+                    <legend>Senior Feminine B</legend>
+                    <img class="equipelogo" src="paris.jpg" alt="logofcvo">
+                    <p class="heurerencontre">Match à 15h00 Artigueloutan</p>
+                    <img class="equipelogo" src="logofcvo.png" alt="logofcvo">
+                </fieldset>
+            </section>        
+        </fieldset>
+        <section id="conteneurcategories">
+          <div id="responsivenav">
+            <h1 class="titreconteneurcategories">Nos Equipes</h1>
+            <nav class="sectionnav">
+                <ul id="menu">
+                    <li class="sousmenusection">Senior A
+                        <ul class="sousmenusection1">
+                            <li><a href="#">Classement</a></li>
+                            <li><a href="#">Résultat</a></li>
+                            <li><a href="#">Match à venir</a></li> 
+                        </ul>
+                    </li>
+                    <li class="sousmenusection">Senior B
+                        <ul class="sousmenusection1">
+                            <li><a href="#">Classement</a></li>
+                            <li><a href="#">Résultat</a></li>
+                            <li><a href="#">Match à venir</a></li> 
+                        </ul>
+                    </li>
+                    <li class="sousmenusection">Feminine A
+                        <ul class="sousmenusection1">
+                            <li><a href="#">Classement</a></li>
+                            <li><a href="#">Résultat</a></li>
+                            <li><a href="#">Match à venir</a></li> 
+                        </ul>
+                    </li>
+                    <li class="sousmenusection">Femine B
+                        <ul class="sousmenusection1">
+                            <li><a href="#">Classement</a></li>
+                            <li><a href="#">Résultat</a></li>
+                            <li><a href="#">Match à venir</a></li> 
+                        </ul>
+                    </li>
+                    <li class="sousmenusection">Veteran
+                        <ul class="sousmenusection1">
+                            <li><a href="#">Classement</a></li>
+                            <li><a href="#">Résultat</a></li>
+                            <li><a href="#">Match à venir</a></li> 
+                        </ul>
+                    </li>
+                    <li class="sousmenusection">Loisir
+                        <ul class="sousmenusection1">
+                            <li><a href="#">Classement</a></li>
+                            <li><a href="#">Résultat</a></li>
+                            <li><a href="#">Match à venir</a></li> 
+                        </ul>
+                    </li>
+                    <li class="sousmenusection">U17
+                        <ul class="sousmenusection1">
+                            <li><a href="#">Classement</a></li>
+                            <li><a href="#">Résultat</a></li>
+                            <li><a href="#">Match à venir</a></li> 
+                        </ul>
+                    </li>
+                    <li class="sousmenusection">U15
+                        <ul class="sousmenusection1">
+                            <li><a href="#">Classement</a></li>
+                            <li><a href="#">Résultat</a></li>
+                            <li><a href="#">Match à venir</a></li> 
+                        </ul>
+                    </li>
+                    <li class="sousmenusection">U13
+                        <ul class="sousmenusection1">
+                            <li><a href="#">Classement</a></li>
+                            <li><a href="#">Résultat</a></li>
+                            <li><a href="#">Match à venir</a></li> 
+                        </ul>
+                    </li>
+                    <li class="sousmenusection">U11
+                        <ul class="sousmenusection1">
+                            <li><a href="#">Classement</a></li>
+                            <li><a href="#">Résultat</a></li>
+                            <li><a href="#">Match à venir</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+          </div>
+            <div id="responsive">
+              <h1 class="titreconteneurcategories">Vous souhaitez-nous rejoindre ?</h1>
+            <form method="post" action=""></form>
+                <fieldset class="formulaire">
+                    <legend>Fichie d'inscription</legend>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom">
 
-  font-weight: bold;
-}
-.logofcvo {
-  height: 75px;
-  width: 75px;
-}
-li  {
-  list-style-type: none;
-}
-a {
-  color: black;
-  text-decoration: none;
-}
-.boutique a{
-  padding-top: 0px !important;
-  padding-top: 25px;
-}
-#navbarheader {
-  background: grey;
-  width: 100%;
-  height: 76px;
-}
-#navbarheader .navbarelement {
-  display: flex;
-  width: 80%;
-  margin: auto;
-  justify-content: space-between;
-  position: relative;
-}
-#navbarheader .navbarelement, a {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 25px;
-}
-.logofcvonavheader {
-  height: 76px ;
-  width: 76px ;
-  position: relative;
-  margin-top: -25px;
-}
-.sous-menu {
-    width: 180px;
-    background-image: linear-gradient(to top, grey ,  #C0C0C0 );
-    position: absolute;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    display: none;
-}
-#navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
-  display: block;
-}
-#navbarheader nav .navbarelement .menuderoulant .sous-menu li:hover {
-  font-size: 25px;
-  color : green;
-}
-#navbarheader nav .navbarelement .menuderoulant .sous-menu li a {
-  height: 10px;
-  padding: 0px;
-}
-#navbarheader nav .navbarelement .menuderoulant .sous-menu li a:hover {
-  color: green;
-  font-size: 25px;
-}
-#navbarheader nav .navbarelement li:hover, a:hover {
-  color : green;
-}
-#conteneursection {
-  margin-top: 30%;
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  margin: auto;
-  justify-content: space-between;
-}
-.rencontre {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-#fieldsetconteneursection {
-  border: 5px solid green;
-  background: #B0F2B6;
-  border-radius: 10px;
-  height: 10%;
-  width: 60%;
-}
-.fieldsetrencontre {
-  border: 5px solid white;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 10px;
-  width: 100%;
-  display: flex;
-}
-legend {
-  background: grey;
-  border-radius: 10px;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
-.equipelogo {
-  width: 60px;
-  height: 60px;
-  margin: auto;
-  padding: 10px;
-  background: #B0F2B6;
-}
-.heurerencontre {
-  font-size: 30px;
-  text-align: center;
-  width: 60%;
-}
-#conteneurpre-inscription {
-  display: none;
-  width: 450px;
-  height: auto;
-  background: grey;
-  border-radius: 10px;
-  position: absolute;
-}
-.fieldsetpreinscription {
-  width: auto;
-  height: auto;
-  border-radius: 10px;
-}
+                    <label for="prenom">Prenom</label>
+                    <input type="text" id="prenom" name="prenom">
 
-#conteneurcategories {
-  width: 35%;
-  height: 10%;
-  margin-top: 8px;
-  border-radius: 10px;
-  background: #B0F2B6;
-}
-.titreconteneurcategories {
-  color: white;
-  font-size: 25px;
-  text-align: center;
-}
-.sectionnav {
-  padding-bottom: 20px;
-  border-bottom: 2px solid white;
-  position: relative;
-}
-.sectionnav  ul li a {
-  height: auto;
-  padding: 0;
-  margin-bottom: 5px;
-}
-.sectionnav  ul li {
-  margin-bottom: 5px;
-}
+                    <label for="dtn">Date de naissance</label>
+                    <input type="date" id="dtn" name="date_de_naissance">
 
-#menu {    
-    width: 150px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-.sousmenusection1 {
-  background: grey;
-  border-radius: 10px;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  width: 120px;
-  height: auto;
-  color : white;
-  display: none;
-  background-image: linear-gradient(to top, grey ,  #C0C0C0 );
-  float: right;
-  margin-top: -24px;
-}
-.sousmenusection:hover {
-  padding: 0;
-  margin: 0;
-}
-.sousmenusection {
-  padding: 0;
-  margin: 0;
-  width: 100px;
-  width: 150px;
-}
-.sousmenusection li a {
-  text-align: left;
-  padding: 0;
-  margin: 0;
-}
-.sousmenusection1 li:hover {
-  font-size: 25px;
-  color : #B0F2B6;
-}
-#conteneurcategories nav #menu .sousmenusection:hover .sousmenusection1 {
-  display: block;
-  margin-left:120px;
-}
-.sectionnav li {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-}
-.sectionnav li:hover {
-  color : green;
-  font-size: 25px;
-}
-.formulaire {
-  padding: 0;
-  margin: 0;
-  padding: 10px;
-  margin: auto;
-  justify-content: space-between;
-  border : 3px solid grey;
-  border-radius: 10px;
-}
-label {
-  float: left;
-  color: black;
-  font-weight: bold;
-  width: 120px;
-  text-align: left;
-  font-size: 15px;
-}
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url(téléchargement.jpg);
-  background-size: 100% 100%;
-}
-input {
-  width: 150px;
-}
-button {
-  margin-left: 35%;
-  width: 30%;
-  margin-top: 10px;
-}
+                    <label for="role">Role</label>
+                    <select id="role" name="role">
+                      <option value="null">Choisir un rôle</option>
+                      <option value="Joueur">Joueur</option>
+                      <option value="Arbitre">Arbitre</option>
+                      <option value="Educateur">Educateur</option>
+                    </select>
 
-@media (min-width: 320px) and (max-width: 433px) {
-  body {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  #conteneurpre-inscription {
-    width: auto !important;
-  }
-  .titreheader {
-    font-size: 28px !important;
-    text-align: center;
-    width: auto !important;
-  }
-  #conteneurheader {
-    width: auto !important;
-  }
-  #conteneurheader #conteneurheaderpresentation {
-    width: auto !important;
-    height: 60px !important;
-  }
-  #navbarheader {
-   width: auto !important;
-   margin-top: -15px !important;
-  }
-  #navbarheader nav .navbarelement {
-   width: auto !important;
-   padding-left: 0 !important;
-   margin: 0 !important;
-  }
-  #conteneurheader .logofcvo {
-    display: none;
-  }
-  #conteneursection {
-    width: auto !important;
-    display: flex;
-    flex-direction: column;
-  }
-  #fieldsetconteneursection {
-    width: auto !important;
-  }
-  #conteneurcategories {
-    display: flex;
-    flex-direction: row;
-    width: auto !important;
-    justify-content: space-between;
-    width: auto !important;
-  }
-  #conteneurcategories #responsivenav, #responsive {
-    width: 45% !important ;
-  }
-  .sectionnav {
-    border-bottom: 0px solid #B0F2B6;
-  } 
-  button {
-    margin:  auto;
-    width:50%;
-    margin-top: 10px;
-  }
-  header #navbarheader nav .navbarelement {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: auto !important;
-  }
-  header #navbarheader nav {
-    background: grey;
-    padding: 0 !important;
-    height: 172px !important;
-  }
-  .saut {
-    height: 150px;
-  }
-  .sous-menu { 
-    width: auto !important;
-    position: absolute;
-  }
-  #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
-    position:absolute;
-    left:120px;
-    display: block;
-  }
-  .menuderoulant {
-    width: auto !important;
-  }
-  #conteneurcategories {
-    margin: auto !important;
-  }
-}
+                    <label for="categorie">Catégorie</label>
+                    <select name="categorie" id="categorie">
+                        <option value="empty">Choisir une catégorie</option>
+                        <option value="U7">U7</option>
+                        <option value="U9">U9</option>
+                        <option value="U11">U11</option>
+                        <option value="U13">U13</option>
+                        <option value="U15">U15</option>
+                        <option value="U17">U17</option>
+                        <option value="U19">U19</option>
+                        <option value="Seniors">Seniors</option>
+                        <option value="Veteran">Veteran</option>
+                        <option value="Loisir">Loisir</option>
+                    </select>
+                    <label for="poste">Poste</label>
+                    <select name="poste" id="poste">
+                        <option value="empty">Choisir un poste</option>
+                        <option value="Gardien">Gardien</option>
+                        <option value="Defenseur">Defenseur</option>
+                        <option value="Milieu">Milieu</option>
+                        <option value="Attaquant">Attaquant</option>
+                    </select>
+                    <label for="dernierclub">Dernier club</label>
+                    <input type="text" name="dernierclub" id="dernierclub">
 
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
 
-
-@media (min-width:434px) and (max-width: 517px) {
-  body {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  #conteneurheader {
-    width: auto !important;
-  }
-  #conteneurheader #conteneurheaderpresentation {
-    width: 410px !important;
-    margin: auto !important;
-  }
-  #navbarheader {
-   width: auto !important;
-  }
-  #navbarheader nav .navbarelement {
-   width: auto !important;
-   padding-left: 0 !important;
-   margin: 0 !important;
-  }
-  #conteneurheader .logofcvo {
-    display: none;
-  }
-  #conteneursection {
-    width: auto !important;
-    display: flex;
-    flex-direction: column;
-  }
-  #fieldsetconteneursection {
-    width: auto !important;
-  }
-  #conteneurcategories {
-    display: flex;
-    flex-direction: row;
-    width: auto !important;
-    justify-content: space-between;
-  }
-  #conteneurcategories #responsivenav, #responsive {
-    width: 45% !important ;
-  }
-  .sectionnav {
-    border-bottom: 0px solid #B0F2B6;
-  } 
-  button {
-    margin:  auto;
-    width:50%;
-    margin-top: 10px;
-  }
-  header #navbarheader nav .navbarelement {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-  header #navbarheader nav {
-    background: grey;
-    padding: 0 !important;
-    height: 172px !important;
-  }
-  .saut {
-    height: 150px;
-  }
-  .sous-menu { 
-    width: auto !important;
-    position: absolute;
-  }
-  #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
-    position:absolute;
-    left:120px;
-    display: block;
-  }
-  .menuderoulant {
-    width: auto !important;
-  }
-}
-@media (min-width: 518px) and (max-width: 623px) {
-  #conteneurheader {
-      width: auto !important;
-  }
-  #conteneurheader #conteneurheaderpresentation {
-      width: 500px !important;
-      margin: auto;
-  }
-  #navbarheader {
-    width: auto !important;
-  }
-  #navbarheader nav .navbarelement {
-     width: auto !important;
-     padding-left: 0 !important;
-     margin: 0 !important;
-  }
-  #conteneursection {
-    width: auto;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  #fieldsetconteneursection {
-     width: auto !important;
-  }
-  .formulaire {
-     display: flex;
-     flex-direction: column;
-  }
-  select {
-    width: 158px;
-  }
-  #conteneurcategories {
-    display: flex;
-    flex-direction: row;
-    width: auto !important;
-    justify-content: space-between;
-  }
-  #conteneurcategories #responsivenav, #responsive {
-    width: 45% !important ;
-  }
-  .sectionnav {
-    border-bottom: 0px solid #B0F2B6;
-  } 
-  #navbarheader nav .navbarelement .menuderoulant:nth-child(5) {
-    position: relative;
-  }
-  #navbarheader nav .navbarelement .menuderoulant:nth-child(5):hover .sous-menu {
-    position:absolute;
-    right:0px;
-    top:22px;
-    display: block;
-  }
-}
-
-
-
-@media (min-width: 624px) and (max-width: 889px){
-    #conteneurheader {
-           width: auto !important;
-    }
-    #conteneurheader #conteneurheaderpresentation {
-          width: 550px !important;
-    }
-    #navbarheader {
-      width: auto !important;
-    }
-    #navbarheader nav .navbarelement {
-      width: auto !important;
-      padding-left: 0 !important;
-      margin: 0 !important;
-    }
-    #conteneursection {
-      width: auto !important;
-    }
-    .formulaire {
-      display: flex;
-      flex-direction: column;
-    }
-    .formulaire select {
-        width: 160px;
-    }
-    button {
-          margin:  auto;
-          width:50%;
-          margin-top: 10px;
-    }
-    .sous-menu { 
-    width: auto !important;
-    position: absolute;
-    }
-    #navbarheader nav .navbarelement .menuderoulant:nth-child(5) {
-    position: relative;
-  }
-  #navbarheader nav .navbarelement .menuderoulant:nth-child(5):hover .sous-menu {
-    position:absolute;
-    right:0px;
-    top:22px;
-    display: block;
-  }
-}
-@media (min-width: 890px) and (max-width: 1024px){
-    button {
-          margin:  auto;
-          width:50%;
-          margin-top: 10px;
-    }
-    #conteneurheader {
-           width: auto !important;
-    }
-    #conteneurheader #conteneurheaderpresentation {
-          width: 500px !important;
-    }
-}
-@media (min-width: 1025px) and (max-width: 1500px){
-    #conteneurheader {
-        width: auto !important;
-    }
-    #conteneurheader #conteneurheaderpresentation {
-        width: 500px !important;
-        margin: auto;
-    }
-    .formulaire {
-        display: flex;
-        flex-direction: column;
-    }
-    .formulaire select {
-        width: 160px;
-    }
-    button {
-        width: 120px;
-        margin-left: 0%;
-    }
-}
-@media (min-width: 1680px) {
-  .formulaire {
-    display: flex;
-    flex-direction: column;
-  }
-  select {
-    width: 160px !important;
-  }
-}
+                    <label for="telephone">Telephone</label>
+                    <input type="tel" id="telephone" name="telephone">
+                    <button id="clickme">Envoyer</button>
+                </fieldset>
+            
+            </div>
+        </section>
+    </section>
+</body>
+</html>
