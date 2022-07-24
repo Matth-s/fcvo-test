@@ -272,10 +272,10 @@ button {
   .titreheader {
     font-size: 28px !important;
     text-align: center;
-    width: 450px !important;
+    width: auto !important;
   }
   #conteneurheader {
-    width: auto !important;
+    width: 450px !important;
   }
   #conteneurheader #conteneurheaderpresentation {
     width: 450px !important;
