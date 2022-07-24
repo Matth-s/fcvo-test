@@ -264,10 +264,24 @@ button {
   margin-top: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 340px) and (max-width: 433px) {
   body {
     margin: 0 !important;
     padding: 0 !important;
+  }
+  .rencontre {
+    display: flex;
+    flex-direction: column;
   }
   #conteneurpre-inscription {
     width: auto !important;
@@ -306,13 +320,13 @@ button {
   }
   #conteneurcategories {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: auto !important;
     justify-content: space-between;
-    width: auto !important;
   }
-  #conteneurcategories #responsivenav, #responsive {
-    width: 45% !important ;
+  .formulaire {
+    display: flex;
+    flex-direction: column;
   }
   .sectionnav {
     border-bottom: 0px solid #B0F2B6;
@@ -348,12 +362,86 @@ button {
   .menuderoulant {
     width: auto !important;
   }
-  #conteneurcategories {
+  select {
+    width: 158px;
+  }
+  #responsivenav {
+    border-bottom: 5px solid white;
+  }
+  button {
+    margin-left: 0;
+  }
+  .fieldsetrencontre {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+  }
+  .heurerencontre {
     margin: auto !important;
   }
 }
 
-@media (min-width:435px) and (max-width: 517px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:434px) and (max-width: 517px) {
   body {
     margin: 0 !important;
     padding: 0 !important;
