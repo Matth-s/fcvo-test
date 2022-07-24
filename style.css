@@ -264,32 +264,32 @@ button {
   margin-top: 10px;
 }
 
-@media (min-width: 300px) and (max-width: 433px) {
+@media (min-width: 320px) and (max-width: 433px) {
   body {
     margin: 0 !important;
     padding: 0 !important;
   }
   #conteneurpre-inscription {
-    width: auto !important;
+    width: 100% !important;
   }
   .titreheader {
     font-size: 28px !important;
     text-align: center;
-    width: auto !important;
+    width: 100% !important;
   }
   #conteneurheader {
-    width: auto !important;
+    width: 100% !important;
   }
   #conteneurheader #conteneurheaderpresentation {
-    width: auto !important;
+    width: 100% !important;
     height: 60px !important;
   }
   #navbarheader {
-   width: auto !important;
+   width: 100% !important;
    margin-top: -15px !important;
   }
   #navbarheader nav .navbarelement {
-   width: auto !important;
+   width: 100% !important;
    padding-left: 0 !important;
    margin: 0 !important;
   }
@@ -297,19 +297,18 @@ button {
     display: none;
   }
   #conteneursection {
-    width: auto !important;
+    width: 100% !important;
     display: flex;
     flex-direction: column;
   }
   #fieldsetconteneursection {
-    width: auto !important;
+    width: 100% !important;
   }
   #conteneurcategories {
     display: flex;
     flex-direction: row;
-    width: auto !important;
+    width: 100% !important;
     justify-content: space-between;
-    width: auto !important;
   }
   #conteneurcategories #responsivenav, #responsive {
     width: 45% !important ;
@@ -337,7 +336,7 @@ button {
     height: 150px;
   }
   .sous-menu { 
-    width: auto !important;
+    width: 100% !important;
     position: absolute;
   }
   #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
@@ -346,10 +345,10 @@ button {
     display: block;
   }
   .menuderoulant {
-    width: auto !important;
+    width: 100% !important;
   }
   #conteneurcategories {
-    margin: auto !important;
+    margin: 100% !important;
   }
 }
 
