@@ -273,7 +273,6 @@ button {
     font-size: 28px !important;
     text-align: center;
     width: auto !important;
-    border: 1px solid white;
   }
   #conteneurheader {
     width: auto !important;
@@ -281,7 +280,6 @@ button {
   #conteneurheader #conteneurheaderpresentation {
     width: 450px !important;
     height: 60px !important;
-    background: red;
   }
   #navbarheader {
    width: 450px !important;
