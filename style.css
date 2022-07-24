@@ -270,26 +270,26 @@ button {
     padding: 0 !important;
   }
   #conteneurpre-inscription {
-    width: 100% !important;
+    width: auto !important;
   }
   .titreheader {
     font-size: 28px !important;
     text-align: center;
-    width: 100% !important;
+    width: auto !important;
   }
   #conteneurheader {
-    width: 100% !important;
+    width: auto !important;
   }
   #conteneurheader #conteneurheaderpresentation {
-    width: 100% !important;
+    width: auto !important;
     height: 60px !important;
   }
   #navbarheader {
-   width: 100% !important;
+   width: auto !important;
    margin-top: -15px !important;
   }
   #navbarheader nav .navbarelement {
-   width: 100% !important;
+   width: auto !important;
    padding-left: 0 !important;
    margin: 0 !important;
   }
@@ -297,18 +297,19 @@ button {
     display: none;
   }
   #conteneursection {
-    width: 100% !important;
+    width: auto !important;
     display: flex;
     flex-direction: column;
   }
   #fieldsetconteneursection {
-    width: 100% !important;
+    width: auto !important;
   }
   #conteneurcategories {
     display: flex;
     flex-direction: row;
-    width: 100% !important;
+    width: auto !important;
     justify-content: space-between;
+    width: auto !important;
   }
   #conteneurcategories #responsivenav, #responsive {
     width: 45% !important ;
@@ -336,7 +337,7 @@ button {
     height: 150px;
   }
   .sous-menu { 
-    width: 100% !important;
+    width: auto !important;
     position: absolute;
   }
   #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
@@ -345,10 +346,10 @@ button {
     display: block;
   }
   .menuderoulant {
-    width: 100% !important;
+    width: auto !important;
   }
   #conteneurcategories {
-    margin: 100% !important;
+    margin: auto !important;
   }
 }
 
