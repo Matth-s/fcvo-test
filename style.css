@@ -333,6 +333,7 @@ button {
     flex-direction: column;
     text-align: left;
     margin: auto !important;
+    top: -12px;
   }
   header #navbarheader nav {
     background: grey;
@@ -342,13 +343,20 @@ button {
   .saut {
     height: 150px;
   }
+  .fleche {
+    display: inline-block !important;
+    padding-left: 5px ;
+  }
+  #navbarheader nav .navbarelement  .menuderoulant {
+    width: 150px !important;
+  }
   .sous-menu { 
     width: auto !important;
     position: absolute;
+    left:152px;
+    margin-top: -6%;
   }
   #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
-    position:absolute;
-    left:120px;
     display: block;
   }
   .menuderoulant {
@@ -502,9 +510,6 @@ button {
     display: block;
   }
 }
-
-
-
 @media (min-width: 624px) and (max-width: 889px){
     #conteneurheader {
            width: auto !important;
@@ -591,3 +596,7 @@ button {
     width: 160px !important;
   }
 }
+  .fleche {
+    text-align: right;
+    display: none;
+  }
