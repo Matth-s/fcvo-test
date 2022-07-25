@@ -343,10 +343,6 @@ button {
   .saut {
     height: 150px;
   }
-  .fleche {
-    display: inline-block !important;
-    padding-left: 5px ;
-  }
   #navbarheader nav .navbarelement  .menuderoulant {
     width: 150px !important;
   }
@@ -596,7 +592,3 @@ button {
     width: 160px !important;
   }
 }
-  .fleche {
-    text-align: right;
-    display: none;
-  }
