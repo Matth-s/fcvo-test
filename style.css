@@ -379,7 +379,7 @@ button {
   }
   .heurerencontre {
     margin: auto !important;
-    font-size: 20px;
+    font-size: 25px !important;
     width: 80%;
     text-align: justify-all;
   }
