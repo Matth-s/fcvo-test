@@ -592,8 +592,26 @@ button {
   .formulaire {
     display: flex;
     flex-direction: column;
+    width: 46%;
+    margin: auto;
+  }
+  input  {
+    width: 180px ;
   }
   select {
-    width: 160px !important;
+    width: 188px;
+  }
+  .calendrier {
+    width: 184px;
+  }
+  button {
+    width: 188px;
+    margin-top: 10px !important;
+    margin: 0;
+  }
+  button:hover {
+    background: green;
+    border : 2px solid green;
+    color: white;
   }
 }
