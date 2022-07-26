@@ -336,7 +336,6 @@ button {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin: auto !important;
     top: -12px;
   }
   header #navbarheader nav {
@@ -347,8 +346,11 @@ button {
   .saut {
     height: 150px;
   }
+  .menuderoulant, .boutique {
+    padding-bottom: 3px;
+  }
   #navbarheader nav .navbarelement  .menuderoulant {
-    border-right: 1px solid white ;
+    border-right: 1px solid white;
     width: 150px !important;
   }
   .sous-menu { 
@@ -380,6 +382,7 @@ button {
   .heurerencontre {
     margin: auto !important;
     font-size: 25px !important;
+    color: green;
     width: 80%;
     text-align: justify-all;
   }
