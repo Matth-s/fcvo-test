@@ -22,7 +22,7 @@
                                 <li class="menuderoulant">Vie du club 
                                     <ul class="sous-menu">
                                         <li><a href="#">Photo</a></li>
-                                        <li><a href="#">Foyer</a></li>
+                                        <li><a href="foyer.html">Foyer</a></li>
                                         <li><a href="#">Equipe</a></li>
                                         <li><a href="#">Actualités</a></li>
                                     </ul>
@@ -51,40 +51,41 @@
         </div>
     </header>
     <div class="saut"></div>
-    <section id="conteneursection">
+    <div id="conteneursection">
         <fieldset id="fieldsetconteneursection">
             <legend>Rencontre du weekend</legend>
-            <section class="rencontre">
+            <div class="rencontre">
                 <fieldset class="fieldsetrencontre">
                     <legend>Senior homme A</legend>
                     <img class="equipelogo" src="paris.jpg" alt="logofcvo">
                     <p class="heurerencontre">Match à 15h00 soumoulou</p>
                     <img class="equipelogo" src="logofcvo.png" alt="logofcvo">
                 </fieldset>
-            </section>
-            <section class="rencontre">
+            </div>
+            <div class="rencontre">
                 <fieldset class="fieldsetrencontre">
                     <legend>Senior homme A</legend>
                     <img class="equipelogo" src="paris.jpg" alt="logofcvo">
                     <p class="heurerencontre">Match à 15h00 Artigueloutan</p>
                     <img class="equipelogo" src="logofcvo.png" alt="logofcvo">
                 </fieldset>
-            </section>
-            <section class="rencontre">
+            </div>
+            <div class="rencontre">
                 <fieldset class="fieldsetrencontre">
                     <legend>Senior Feminine A</legend>
                     <img class="equipelogo" src="paris.jpg" alt="logofcvo">
                     <p class="heurerencontre">Match à 15h00 Artigueloutan</p>
                     <img class="equipelogo" src="logofcvo.png" alt="logofcvo">
                 </fieldset>
-            </section><section class="rencontre">
+            </div>
+            <div class="rencontre">
                 <fieldset class="fieldsetrencontre">
                     <legend>Senior Feminine B</legend>
                     <img class="equipelogo" src="paris.jpg" alt="logofcvo">
                     <p class="heurerencontre">Match à 15h00 Artigueloutan</p>
                     <img class="equipelogo" src="logofcvo.png" alt="logofcvo">
                 </fieldset>
-            </section>        
+            </div>        
         </fieldset>
         <section id="conteneurcategories">
           <div id="responsivenav">
@@ -165,62 +166,62 @@
             </nav>
           </div>
           <div id="responsive">
-              <h1 class="titreconteneurcategories">Vous souhaitez-nous rejoindre ?</h1>
-            <form method="post" action=""></form>
-                <fieldset class="formulaire">
-                    <legend>Fichie d'inscription</legend>
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom">
-
-                    <label for="prenom">Prenom</label>
-                    <input type="text" id="prenom" name="prenom">
-
-                    <label for="dtn">Date de naissance</label>
-                    <input class="calendrier"type="date" id="dtn" name="date_de_naissance">
-
-                    <label for="role">Role</label>
-                    <select id="role" name="role">
-                      <option value="null">Choisir un rôle</option>
-                      <option value="Joueur">Joueur</option>
-                      <option value="Arbitre">Arbitre</option>
-                      <option value="Educateur">Educateur</option>
-                    </select>
-
-                    <label for="categorie">Catégorie</label>
-                    <select name="categorie" id="categorie">
-                        <option value="empty">Choisir une catégorie</option>
-                        <option value="U7">U7</option>
-                        <option value="U9">U9</option>
-                        <option value="U11">U11</option>
-                        <option value="U13">U13</option>
-                        <option value="U15">U15</option>
-                        <option value="U17">U17</option>
-                        <option value="U19">U19</option>
-                        <option value="Seniors">Seniors</option>
-                        <option value="Veteran">Veteran</option>
-                        <option value="Loisir">Loisir</option>
-                    </select>
-                    <label for="poste">Poste</label>
-                    <select name="poste" id="poste">
-                        <option value="empty">Choisir un poste</option>
-                        <option value="Gardien">Gardien</option>
-                        <option value="Defenseur">Defenseur</option>
-                        <option value="Milieu">Milieu</option>
-                        <option value="Attaquant">Attaquant</option>
-                    </select>
-                    <label for="dernierclub">Dernier club</label>
-                    <input type="text" name="dernierclub" id="dernierclub">
-
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email">
-
-                    <label for="telephone">Telephone</label>
-                    <input type="tel" id="telephone" name="telephone">
-                    <button id="clickme">Envoyer</button>
-                </fieldset>
-            
+                <h1 class="titreconteneurcategories">Vous souhaitez-nous rejoindre ?</h1>
+                <form method="post" action="#">
+                    <fieldset class="formulaire">
+                        <legend>Fichie d'inscription</legend>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom">
+                        <label for="prenom">Prenom</label>
+                        <input type="text" id="prenom" name="prenom">
+                        <label for="dtn">Date de naissance</label>
+                        <input class="calendrier" type="date" id="dtn" name="date_de_naissance">
+                        <label for="role">Role</label>
+                        <select id="role" name="role">
+                            <option value="null">Choisir un rôle</option>
+                            <option value="Joueur">Joueur</option>
+                            <option value="Arbitre">Arbitre</option>
+                            <option value="Educateur">Educateur</option>
+                        </select>
+                        <label for="categorie">Catégorie</label>
+                        <select name="categorie" id="categorie">
+                            <option value="empty">Choisir une catégorie</option>
+                            <option value="U7">U7</option>
+                            <option value="U9">U9</option>
+                            <option value="U11">U11</option>
+                            <option value="U13">U13</option>
+                            <option value="U15">U15</option>
+                            <option value="U17">U17</option>
+                            <option value="U19">U19</option>
+                            <option value="Seniors">Seniors</option>
+                            <option value="Veteran">Veteran</option>
+                            <option value="Loisir">Loisir</option>
+                        </select>
+                        <label for="poste">Poste</label>
+                        <select name="poste" id="poste">
+                            <option value="empty">Choisir un poste</option>
+                            <option value="Gardien">Gardien</option>
+                            <option value="Defenseur">Defenseur</option>
+                            <option value="Milieu">Milieu</option>
+                            <option value="Attaquant">Attaquant</option>
+                        </select>
+                        <label for="dernierclub">Dernier club</label>
+                        <input type="text" name="dernierclub" id="dernierclub">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email">
+                        <label for="telephone">Telephone</label>
+                        <input type="tel" id="telephone" name="telephone">
+                        <button id="clickme">Envoyer</button>
+                    </fieldset>
+                </form>
+                
             </div>
         </section>
-    </section>
+    </div>
+    <script>
+            const button = document.getElementById("clickme"); 
+            button.onclick = () => document.body.style.backgroundColor ="blue";
+            
+    </script>
 </body>
 </html>
