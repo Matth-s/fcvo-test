@@ -62,14 +62,16 @@ a {
   margin-top: -25px;
 }
 .sous-menu {
-    width: 180px;
+    width: 160px;
     background-image: linear-gradient(to top, grey ,  #C0C0C0 );
     position: absolute;
     padding: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    text-align: left;
     display: none;
+    padding-left: 20px;
 }
 #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
   display: block;
@@ -77,6 +79,7 @@ a {
 #navbarheader nav .navbarelement .menuderoulant .sous-menu li:hover {
   font-size: 25px;
   color : green;
+  padding-left: 5px;
 }
 #navbarheader nav .navbarelement .menuderoulant .sous-menu li a {
   height: 10px;
@@ -137,6 +140,7 @@ legend {
 .heurerencontre {
   font-size: 30px;
   text-align: center;
+  color: green;
   width: 60%;
 }
 #conteneurpre-inscription {
