@@ -152,7 +152,6 @@ legend {
   height: auto;
   border-radius: 10px;
 }
-
 #conteneurcategories {
   width: 35%;
   height: 10%;
@@ -196,7 +195,7 @@ legend {
   height: auto;
   color : white;
   display: none;
-  background-image: linear-gradient(to top, grey ,  #C0C0C0 );
+  background-image: linear-gradient(to top, grey , #C0C0C0 );
   float: right;
   margin-top: -24px;
 }
@@ -265,6 +264,11 @@ button {
 }
 
 @media (min-width: 340px) and (max-width: 433px) {
+  .fleche {
+    color : green;
+    text-align: right !important;
+    margin-right: auto;
+  }
   body {
     margin: 0 !important;
     padding: 0 !important;
@@ -344,16 +348,17 @@ button {
     height: 150px;
   }
   #navbarheader nav .navbarelement  .menuderoulant {
+    border-right: 1px solid white ;
     width: 150px !important;
   }
   .sous-menu { 
     width: auto !important;
     position: absolute;
-    left:152px;
-    margin-top: -6%;
+    left: 150px;
   }
   #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
-    display: block;
+    display: block; 
+    margin-top: -25px !important;
   }
   .menuderoulant {
     width: auto !important;
