@@ -347,7 +347,7 @@ button {
     height: 150px;
   }
   .menuderoulant, .boutique {
-    padding-bottom: 3px;
+    padding-bottom: 3px !important;
   }
   #navbarheader nav .navbarelement  .menuderoulant {
     border-right: 1px solid white;
