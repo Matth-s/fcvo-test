@@ -277,7 +277,6 @@ button {
   body { 
     margin: 0 !important;
     padding: 0 !important;
-    background: red;
   }
   .rencontre {
     display: flex;
@@ -358,7 +357,6 @@ button {
   #navbarheader nav .navbarelement  .menuderoulant {
     border-right: 1px solid white;
     width: 180px !important;
-    background: red;
   }
   .sous-menu { 
     width: auto !important;
