@@ -204,13 +204,12 @@ legend {
   margin-top: -24px;
 }
 .sousmenusection:hover {
-  padding: 0;
+  padding-left: 10px;
   margin: 0;
 }
 .sousmenusection {
-  padding: 0;
+  padding-left: 0;
   margin: 0;
-  width: 100px;
   width: 150px;
 }
 .sousmenusection li a {
@@ -224,7 +223,7 @@ legend {
 }
 #conteneurcategories nav #menu .sousmenusection:hover .sousmenusection1 {
   display: block;
-  margin-left:120px;
+  margin-left:130px;
 }
 .sectionnav li {
   color: white;
