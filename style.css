@@ -265,14 +265,16 @@ button {
   width: 30%;
   margin-top: 10px;
 }
-
 @media (min-width: 340px) and (max-width: 433px) {
-  .fleche {
-    color : green;
-    text-align: right !important;
-    margin-right: auto;
+  .essaie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  body {
+  #navbarheader nav .navbarelement .menuderoulant:hover .essaie .element:nth-child(2) {
+    transform: rotate(180deg);
+  }
+  body { 
     margin: 0 !important;
     padding: 0 !important;
   }
