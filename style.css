@@ -1,631 +1,300 @@
-.saut {
-  height: 50px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-#conteneurheader {
-  height: 75px;
-  width: 100%;
-  background: #B0F2B6;
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
 }
- #conteneurheaderpresentation {
-  width: 35%;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-}
-.titreheader {
-  color: white;
-  font-size: 30px;
-  background-image: linear-gradient(to right, green, #689D71);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  font-weight: bold;
-}
-.logofcvo {
-  height: 75px;
-  width: 75px;
-}
-li  {
-  list-style-type: none;
+ul, li {
+    text-decoration: none;
+    list-style-type: none;
 }
 a {
-  color: black;
-  text-decoration: none;
+    text-decoration: none;
+    color: white;
 }
-.boutique a{
-  padding-top: 0px !important;
-  padding-top: 25px;
+header {
+    width: 100%;
+    height: 160px;
 }
-#navbarheader {
-  background: grey;
-  width: 100%;
-  height: 76px;
+#container-header {
+    display: flex;
+    flex-direction: column;
 }
-#navbarheader .navbarelement {
-  display: flex;
-  width: 80%;
-  margin: auto;
-  justify-content: space-between;
-  position: relative;
+.element-header {
+    width: 100%;
+    height: 80px;
 }
-#navbarheader .navbarelement, a {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 25px;
+.element-header:nth-child(1) {
+    background-color: #B0F2B6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.logofcvonavheader {
-  height: 76px ;
-  width: 76px ;
-  position: relative;
-  margin-top: -25px;
+.logo-header {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+}
+.titre-header {
+    background-image: linear-gradient(to right, green, #689D71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+}
+.element-header:nth-child(2) {
+    background-color: grey;
+}
+#menu {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-deroulant {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 .sous-menu {
-    width: 160px;
-    background-image: linear-gradient(to top, grey ,  #C0C0C0 );
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    width: 190px;
+    height: auto;
+    background: linear-gradient(to top, grey ,  #C0C0C0 );
     padding: 10px;
+    border-radius: 10px;
+    display: none;
+    z-index: 9999999;
+}
+.menu-deroulant:hover .sous-menu {
+    display: block;
+}
+.sous-menu a {
+    font-size: 20px;
+    font-weight: bold;
+}
+.sous-menu li:hover a {
+    color: green;
+    padding-left: 10px;
+}
+
+#container-section {
+    width: 55%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#evenement {
+    width: 65%;
+    height: auto;
+    background-color: #B0F2B6;
+    border-radius: 10px;
+}
+.titre-evenement {
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.bordure-rencontre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    height: 150px;
+    margin-bottom: 15px;
+    border: 8px solid white;
+    position: relative;
+    
+}
+.equipe-bordure-rencontre {
+    background-color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px;
+}
+.equipe-logo {
+    width: 70px;
+    height: 70px;
+}
+.information-rencontre {
+    color: black;
+    font-size: 25px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+#container-section-droit {
+    width: 33%;
+    height: 10%;
+    background-color: #B0F2B6;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    text-align: left;
-    display: none;
+    padding-bottom: 10px;
+}
+.element-container-section-droit {
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+}
+.titre-section-droit {
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.equipe-section-droit {
+    font-size: 22px;
+    color: white;
     padding-left: 20px;
 }
-#navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
-  display: block;
-}
-#navbarheader nav .navbarelement .menuderoulant .sous-menu li:hover {
-  font-size: 25px;
-  color : green;
-  padding-left: 5px;
-}
-#navbarheader nav .navbarelement .menuderoulant .sous-menu li a {
-  height: 10px;
-  padding: 0px;
-}
-#navbarheader nav .navbarelement .menuderoulant .sous-menu li a:hover {
-  color: green;
-  font-size: 25px;
-}
-#navbarheader nav .navbarelement li:hover, a:hover {
-  color : green;
-}
-#conteneursection {
-  margin-top: 30%;
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  margin: auto;
-  justify-content: space-between;
-}
-.rencontre {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-#fieldsetconteneursection {
-  border: 5px solid green;
-  background: #B0F2B6;
-  border-radius: 10px;
-  height: 10%;
-  width: 60%;
-}
-.fieldsetrencontre {
-  border: 5px solid white;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 10px;
-  width: 100%;
-  display: flex;
-}
-legend {
-  background: grey;
-  border-radius: 10px;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
-.equipelogo {
-  width: 60px;
-  height: 60px;
-  margin: auto;
-  padding: 10px;
-  background: #B0F2B6;
-}
-.heurerencontre {
-  font-size: 30px;
-  text-align: center;
-  color: green;
-  width: 60%;
-}
-#conteneurpre-inscription {
-  display: none;
-  width: 450px;
-  height: auto;
-  background: grey;
-  border-radius: 10px;
-  position: absolute;
-}
-.fieldsetpreinscription {
-  width: auto;
-  height: auto;
-  border-radius: 10px;
-}
-#conteneurcategories {
-  width: 35%;
-  height: 10%;
-  margin-top: 8px;
-  border-radius: 10px;
-  background: #B0F2B6;
-}
-.titreconteneurcategories {
-  color: white;
-  font-size: 25px;
-  text-align: center;
-}
-.sectionnav {
-  padding-bottom: 20px;
-  border-bottom: 2px solid white;
-  position: relative;
-}
-.sectionnav  ul li a {
-  height: auto;
-  padding: 0;
-  margin-bottom: 5px;
-}
-.sectionnav  ul li {
-  margin-bottom: 5px;
-}
-#menu {    
-    width: 150px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-.sousmenusection1 {
-  background: grey;
-  border-radius: 10px;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  width: 120px;
-  height: auto;
-  color : white;
-  display: none;
-  background-image: linear-gradient(to top, grey , #C0C0C0 );
-  float: right;
-  margin-top: -24px;
-}
-.sousmenusection:hover {
-  padding-left: 10px;
-  margin: 0;
-}
-.sousmenusection {
-  padding-left: 0;
-  margin: 0;
-  width: 150px;
-}
-.sousmenusection li a {
-  text-align: left;
-  padding: 0;
-  margin: 0;
-}
-.sousmenusection1 li:hover {
-  font-size: 25px;
-  color : #B0F2B6;
-}
-#conteneurcategories nav #menu .sousmenusection:hover .sousmenusection1 {
-  display: block;
-  margin-left:130px;
-}
-.sectionnav li {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-}
-.sectionnav li:hover {
-  color : green;
-  font-size: 25px;
-}
-.formulaire {
-  padding: 0;
-  margin: 0;
-  padding: 10px;
-  margin: auto;
-  justify-content: space-between;
-  border : 3px solid grey;
-  border-radius: 10px;
-}
-label {
-  float: left;
-  color: black;
-  font-weight: bold;
-  width: 120px;
-  text-align: left;
-  font-size: 15px;
-}
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url(téléchargement.jpg);
-  background-size: 100% 100%;
-}
-input {
-  width: 150px;
-}
-button {
-  margin-left: 35%;
-  width: 30%;
-  margin-top: 10px;
-}
-@media (min-width: 340px) and (max-width: 433px) {
-  .essaie {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .essaie .element:nth-child(2){
-  display: block !important;
-  }
-  #navbarheader nav .navbarelement .menuderoulant:hover .essaie .element:nth-child(2) {
-    transform: rotate(180deg);
-  }
-  body { 
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .rencontre {
-    display: flex;
-    flex-direction: column;
-  }
-  #conteneurpre-inscription {
-    width: auto !important;
-  }
-  .titreheader {
-    font-size: 20px !important;
-    text-align: center;
-    width: auto !important;
-  }
-  #conteneurheader {
-    width: auto !important;
-  }
-  #conteneurheader #conteneurheaderpresentation {
-    width: auto !important;
-    height: 60px !important;
-  }
-  #navbarheader {
-   width: auto !important;
-   margin-top: -15px !important;
-  }
-  #navbarheader nav .navbarelement {
-   width: auto !important;
-   padding-left: 0 !important;
-   margin: 0 !important;
-  }
-  #conteneurheader .logofcvo {
-    display: none;
-  }
-  #conteneursection {
-    width: auto !important;
-    display: flex;
-    flex-direction: column;
-  }
-  #fieldsetconteneursection {
-    width: auto !important;
-  }
-  #conteneurcategories {
-    display: flex;
-    flex-direction: column;
-    width: auto !important;
-    justify-content: space-between;
-  }
-  .formulaire {
-    display: flex;
-    flex-direction: column;
-    width: 150px;
-    margin: auto;
-  }
-  .sectionnav {
-    border-bottom: 0px solid #B0F2B6;
-  } 
-  button {
-    margin:  auto;
-    width:50%;
-    margin-top: 10px;
-  }
-  header #navbarheader nav .navbarelement {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    top: -12px;
-  }
-  header #navbarheader nav {
-    background: grey;
-    padding: 0 !important;
-    height: 172px !important;
-  }
-  .saut {
-    height: 150px;
-  }
-  .menuderoulant, .boutique {
-    padding-bottom: 3px !important;
-  }
-  #navbarheader nav .navbarelement  .menuderoulant {
-    border-right: 1px solid white;
-    width: 180px !important;
-  }
-  .sous-menu { 
-    width: auto !important;
-    position: absolute;
-    left: 180px;
-  }
-  #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
-    display: block; 
-    margin-top: -25px !important;
-  }
-  .menuderoulant {
-    width: auto !important;
-  }
-  select {
-    width: 158px;
-  }
-  #responsivenav {
-    border-bottom: 5px solid white;
-  }
-  button {
-    margin-left: 0;
-  }
-  .fieldsetrencontre {
-    display: flex;
-    width: auto;
-    flex-direction: column;
-  }
-  .heurerencontre {
-    margin: auto !important;
-    font-size: 25px !important;
+.titre-formulaire {
+    border-top: 3px solid white;
+    font-size: 25px;
+    font-weight: bold;
     color: green;
-    width: 80%;
-    text-align: justify-all;
-  }
+    text-align: center;
 }
-@media (min-width:434px) and (max-width: 517px) {
-  body {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  #conteneurheader {
-    width: auto !important;
-  }
-  #conteneurheader #conteneurheaderpresentation {
-    width: 410px !important;
-    margin: auto !important;
-  }
-  #navbarheader {
-   width: auto !important;
-  }
-  #navbarheader nav .navbarelement {
-   width: auto !important;
-   padding-left: 0 !important;
-   margin: 0 !important;
-  }
-  #conteneurheader .logofcvo {
-    display: none;
-  }
-  #conteneursection {
-    width: auto !important;
+#formulaire {
+    border: 3px solid grey;
     display: flex;
+    width: 60%;
     flex-direction: column;
-  }
-  #fieldsetconteneursection {
-    width: auto !important;
-  }
-  #conteneurcategories {
-    display: flex;
-    flex-direction: row;
-    width: auto !important;
-    justify-content: space-between;
-  }
-  #conteneurcategories #responsivenav, #responsive {
-    width: 45% !important ;
-  }
-  .sectionnav {
-    border-bottom: 0px solid #B0F2B6;
-  } 
-  button {
-    margin:  auto;
-    width:50%;
+    border-radius: 10px;
+    margin: auto;
+}
+label, input {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#boutton {
+    width: 100%;
     margin-top: 10px;
-  }
-  header #navbarheader nav .navbarelement {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-  header #navbarheader nav {
-    background: grey;
-    padding: 0 !important;
-    height: 172px !important;
-  }
-  .saut {
-    height: 150px;
-  }
-  .sous-menu { 
-    width: auto !important;
-    position: absolute;
-  }
-  #navbarheader nav .navbarelement .menuderoulant:hover .sous-menu {
-    position:absolute;
-    left:120px;
-    display: block;
-  }
-  .menuderoulant {
-    width: auto !important;
-  }
+    margin-bottom: 10px;
 }
-@media (min-width: 518px) and (max-width: 623px) {
-  #conteneurheader {
-      width: auto !important;
-  }
-  #conteneurheader #conteneurheaderpresentation {
-      width: 500px !important;
-      margin: auto;
-  }
-  #navbarheader {
-    width: auto !important;
-  }
-  #navbarheader nav .navbarelement {
-     width: auto !important;
-     padding-left: 0 !important;
-     margin: 0 !important;
-  }
-  #conteneursection {
-    width: auto;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  #fieldsetconteneursection {
-     width: auto !important;
-  }
-  .formulaire {
-     display: flex;
-     flex-direction: column;
-  }
-  select {
-    width: 158px;
-  }
-  #conteneurcategories {
-    display: flex;
-    flex-direction: row;
-    width: auto !important;
-    justify-content: space-between;
-  }
-  #conteneurcategories #responsivenav, #responsive {
-    width: 45% !important ;
-  }
-  .sectionnav {
-    border-bottom: 0px solid #B0F2B6;
-  } 
-  #navbarheader nav .navbarelement .menuderoulant:nth-child(5) {
-    position: relative;
-  }
-  #navbarheader nav .navbarelement .menuderoulant:nth-child(5):hover .sous-menu {
-    position:absolute;
-    right:0px;
-    top:22px;
-    display: block;
-  }
+.legende-formulaire {
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: grey;
+    margin-left: 15%;
+    padding: 2px;
 }
-@media (min-width: 624px) and (max-width: 889px){
-    #conteneurheader {
-           width: auto !important;
-    }
-    #conteneurheader #conteneurheaderpresentation {
-          width: 550px !important;
-    }
-    #navbarheader {
-      width: auto !important;
-    }
-    #navbarheader nav .navbarelement {
-      width: auto !important;
-      padding-left: 0 !important;
-      margin: 0 !important;
-    }
-    #conteneursection {
-      width: auto !important;
-    }
-    .formulaire {
-      display: flex;
-      flex-direction: column;
-    }
-    .formulaire select {
-        width: 160px;
-    }
-    button {
-          margin:  auto;
-          width:50%;
-          margin-top: 10px;
-    }
-    .sous-menu { 
-    width: auto !important;
-    position: absolute;
-    }
-    #navbarheader nav .navbarelement .menuderoulant:nth-child(5) {
-    position: relative;
-  }
-  #navbarheader nav .navbarelement .menuderoulant:nth-child(5):hover .sous-menu {
-    position:absolute;
-    right:0px;
-    top:22px;
-    display: block;
-  }
-}
-@media (min-width: 890px) and (max-width: 1024px){
-    button {
-          margin:  auto;
-          width:50%;
-          margin-top: 10px;
-    }
-    #conteneurheader {
-           width: auto !important;
-    }
-    #conteneurheader #conteneurheaderpresentation {
-          width: 500px !important;
-    }
-}
-@media (min-width: 1025px) and (max-width: 1500px){
-    #conteneurheader {
-        width: auto !important;
-    }
-    #conteneurheader #conteneurheaderpresentation {
-        width: 500px !important;
-        margin: auto;
-    }
-    .formulaire {
-        display: flex;
+@media (min-width: 736px) and (max-width: 1115px) {
+    #container-section {
         flex-direction: column;
     }
-    .formulaire select {
-        width: 160px;
+    #evenement {
+        width: 100%;
+        border-radius: 10px 10px 0 0 ;
+        border-bottom: 3px solid white;
     }
-    button {
-        width: 120px;
-        margin-left: 0%;
+    #container-section-droit {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border: 0;
+        border-radius: 0 0 10px 10px;
+    }
+    .element-container-section-droit:nth-child(1) {
+        width: 40%;
+        border-right: 2px solid white;
+    }
+    .element-container-section-droit:nth-child(2) {
+        border: 0px;
+    }
+    .titre-formulaire {
+        border: 0px;
     }
 }
-@media (min-width: 1680px) {
-  .formulaire {
-    display: flex;
-    flex-direction: column;
-    width: 46%;
-    margin: auto;
-  }
-  input  {
-    width: 180px ;
-  }
-  select {
-    width: 188px;
-  }
-  .calendrier {
-    width: 184px;
-  }
-  button {
-    width: 188px;
-    margin-top: 10px !important;
-    margin: 0;
-  }
-  button:hover {
-    background: green;
-    border : 2px solid green;
-    color: white;
-  }
+@media (min-width: 520px) and (max-width:736px) {
+    #container-section {
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    #evenement {
+        width: 100%;
+        border-radius: 10px 10px 0 0 ;
+        border-bottom: 3px solid white;
+    }
+    #container-section-droit {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+    .element-container-section-droit:nth-child(1) {
+        width: 40%;
+        border-right: 2px solid white;
+    }
+    .element-container-section-droit:nth-child(2) {
+        border: 0px;
+    }
+    .titre-formulaire {
+        border: 0px;
+    }
+    
+.element-header:nth-child(2) {
+    visibility: hidden;
 }
-.essaie .element:nth-child(2){
-  display: none;
+}
+@media (min-width: 320px) and (max-width: 520px) {
+    .element-header:nth-child(2) {
+        display: none;
+    }
+    .logo-header {
+        display: none;
+    }
+    .titre-header {
+        font-size: 25px;
+    }
+    #container-section {
+        flex-direction: column;
+        width: 100%;
+    }
+    #evenement {
+        width: 100%;
+        border-radius: 10px 10px 0 0 ;
+        border-bottom: 3px solid white;
+    }
+    #container-section-droit {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+    .element-container-section-droit:nth-child(1) {
+        width: 40%;
+        border-right: 2px solid white;
+    }
+    .element-container-section-droit:nth-child(2) {
+        border: 0px;
+    }
+    .titre-formulaire {
+        border: 0px;
+    }
+    
+.element-header:nth-child(2) {
+    visibility: hidden;
+}
 }
