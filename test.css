@@ -76,7 +76,7 @@ header {
     z-index: 9;
 }
 .menu-deroulant:hover .sous-menu {
-    display: block;
+    /*display: block;*/
 }
 .sous-menu a {
     font-size: 20px;
@@ -207,6 +207,11 @@ label, input {
 .fleche {
     display: none;
 }
+@media screen and (min-width: 737px) {
+    .menu-deroulant:hover .sous-menu {
+        display: block;
+    }
+}
 @media (min-width: 736px) and (max-width: 1115px) {
     #container-section {
         flex-direction: column;
@@ -289,9 +294,6 @@ label, input {
         margin-top: -20px;
         justify-content: right;
     }
-    .menu-deroulant:hover .sous-menu {
-        display: block;
-    }
     .sous-menu-clicked {
         display: block;
     }
@@ -338,6 +340,15 @@ label, input {
         flex-direction: column;
         justify-content: space-around;
     }
+    
+    .display {
+        display: block;
+    }
+    
+    .menu-deroulant {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 321px) and (max-width: 520px) {
@@ -383,17 +394,6 @@ label, input {
     .titre-formulaire {
         border: 0px;
     }
-
-
-
-
-
-
-
-
-
-    
-   
     .icone-menu-deroulant {
         display: block;
         z-index: 2;
@@ -420,17 +420,14 @@ label, input {
     }
     #menu {
         display: flex;
-        align-items: center;
-        justify-content: left;
         flex-direction: column;
         width: 61%;
         padding-top: 80px;
-        justify-content: flex-start;
         height: auto;
     }
-    #menu li {
-        display: block;
+    .menu-deroulant {
         width: 80%;
+        margin-bottom: 20px;
     }
     .sous-menu {
         margin-left: 20px;
@@ -448,7 +445,8 @@ label, input {
         margin-top: -20px;
         justify-content: right;
     }
-    .menu-deroulant:hover .sous-menu {
+    .display {
         display: block;
     }
+    
 }
